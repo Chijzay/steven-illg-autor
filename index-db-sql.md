@@ -6,6 +6,8 @@ title: Datenbankerstellung mit SQL
 
 # Datenbankerstellung mit SQL
 
+<br>
+
 <p align="center">
   <img
     src="{{ site.baseurl }}/assets/img/cover-db.jpg"
