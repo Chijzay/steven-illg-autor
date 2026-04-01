@@ -6,6 +6,8 @@ title: Datenbankerstellung mit SQL
 
 # Datenbankerstellung mit SQL
 
+--- 
+
 <br>
 
 <p align="center">
