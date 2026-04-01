@@ -3,7 +3,9 @@ layout: default
 title: Datenbanerstellung mit SQL
 ---
 
-Hier kannst du das Buch direkt im Browser lesen.
+# Datenbanerstellung mit SQL
+
+Hier kannst du die Leseprobe direkt im Browser lesen.
 
 <object data="{{ '/assets/pdf/dbe-sql-steven-illg.pdf' | relative_url }}"
         type="application/pdf"
