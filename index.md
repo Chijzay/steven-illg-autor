@@ -26,8 +26,8 @@ title: Autorenseite
 
 Ich bin Steven Illg und veröffentliche hier Veröffentlichungen, Kurzgeschichten und Einblicke in meine Arbeiten als Autor.
 
-## **[Was in uns bleibt](index-wiub)**
-## **[Datenbankerstellung mit SQL](index-db-sql)**
+## **[Was in uns bleibt](index-wiub.md)**
+## **[Datenbankerstellung mit SQL](index-db-sql.md)**
 ## **[So vergeht die Zeit](./stories/)**
 
 ---
