@@ -14,6 +14,8 @@ Der Zahn von Löwe: 2014
 
 # Kurzgeschichten
 
+<br>
+
 <p align="center">
   <img
     src="{{ site.baseurl }}/assets/img/cover.jpg"
