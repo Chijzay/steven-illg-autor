@@ -112,7 +112,7 @@ Während ich mit Herrn Lange telefoniere, bemerke ich nicht, dass hinter mir auf
 ---
 
 **Quelle:**  <br>
-Anthologie *»So vergeht die Zeit« (2004–2014)*, Geschichte 1, © 2004.
+Anthologie *So vergeht die Zeit (2004–2014)*, Geschichte 1, © 2004.
 
 **Hinweis zur Nutzung:** <br> 
 Diese Leseprobe ist **nicht** zur Weiterverbreitung oder Bearbeitung freigegeben. 
