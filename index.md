@@ -1,5 +1,5 @@
 ---
-title: Leseproben
+title: Autorenseite
 ---
 
 <p align="center">
@@ -20,13 +20,15 @@ title: Leseproben
 
 # Willkommen! 
 
-Hier veröffentliche ich ausgewählte Kurzgeschichten als Leseproben aus meiner Anthologie _„So vergeht die Zeit“_ (2004–2014)
+Ich bin Steven Illg und veröffentliche hier Veröffentlichungen, Kurzgeschichten und Einblicke in meine Arbeiten als Autor.
 
-## **[Zu den Kurzgeschichten](./stories/)**
+## **[Was in uns bleibt](.)**
+## **[Datenbankerstellung mit SQL](.)**
+## **[So vergeht die Zeit](./stories/)**
 
 ---
 
-© Steven Illg, 2004-2025 — **alle Rechte vorbehalten** (siehe **[`LICENSE`](./LICENSE)** im Repository)
+© Steven Illg, 2004-2026 — **alle Rechte vorbehalten** (siehe **[`LICENSE`](./LICENSE)** im Repository)
 
 
 
