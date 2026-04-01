@@ -21,13 +21,27 @@ title: Autorenseite
   </figcaption>
 </figure>
 
+<br>
+
+---
+
+<br>
+
 
 # Willkommen! 
 
 Ich bin Steven Illg. Hier erhalten Sie einen Überblick über meine Veröffentlichungen, Kurzgeschichten und meine Arbeit als Autor.
 
+---
+
 ## **[Was in uns bleibt](index-wiub.md)**
+
+---
+
 ## **[Datenbankerstellung mit SQL](index-db-sql.md)**
+
+---
+
 ## **[So vergeht die Zeit](./stories/)**
 
 ---
