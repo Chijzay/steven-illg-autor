@@ -7,7 +7,7 @@ language: "de"
 rights: "© 2014 Steven Illg. Alle Rechte vorbehalten."
 ---
 
-[Zur Startseite](https://chijzay.github.io/short-stories-samples/) · [Zu den Geschichten](https://chijzay.github.io/short-stories-samples/stories/)
+[Zur Startseite](https://chijzay.github.io/steven-illg-autor/) · [Zu den Geschichten](https://chijzay.github.io/short-stories-samples/stories/)
 
 # **Der Schatten am Fenster**
 
@@ -62,7 +62,7 @@ Ich erstarrte, als ich zuletzt in das Gesicht eines jungen und wunderschönen M�
 ---
 
 **Quelle:**  <br>
-Anthologie *„So vergeht die Zeit“ (2004–2014)*, Geschichte 4, © 2006.
+Anthologie *So vergeht die Zeit (2004–2014)*, Geschichte 4, © 2006.
 
 **Hinweis zur Nutzung:** <br> 
 Diese Leseprobe ist **nicht** zur Weiterverbreitung oder Bearbeitung freigegeben. 
