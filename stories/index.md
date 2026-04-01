@@ -15,7 +15,7 @@ Der Zahn von Löwe: 2014
 # Kurzgeschichten
 
 <p align="center">
-  <img src="assets/img/cover.jpg" alt="Cover: So vergeht die Zeit" width="300">
+  <img src="./assets/img/cover.jpg" alt="Cover: So vergeht die Zeit" width="300">
 </p>
 
 <br>
