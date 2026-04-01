@@ -7,7 +7,7 @@ language: "de"
 rights: "© 2014 Steven Illg. Alle Rechte vorbehalten."
 ---
 
-[Zur Startseite](https://chijzay.github.io/short-stories-samples/) · [Zu den Geschichten](https://chijzay.github.io/short-stories-samples/stories/)
+[Zur Startseite](https://chijzay.github.io/steven-illg-autor/) · [Zu den Geschichten](https://chijzay.github.io/short-stories-samples/stories/)
 
 # **Vorwort**
 
@@ -59,7 +59,7 @@ _»Ein großes Werk für den Autor, ein kleines Buch für die Menschheit«_ – 
 ---
 
 **Quelle:**  <br>
-Anthologie *„So vergeht die Zeit“ (2004–2014)*, © 2014.
+Anthologie *So vergeht die Zeit (2004–2014)*, © 2014.
 
 **Hinweis zur Nutzung:** <br> 
 Diese Leseprobe ist **nicht** zur Weiterverbreitung oder Bearbeitung freigegeben. 
