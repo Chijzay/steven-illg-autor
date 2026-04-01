@@ -18,6 +18,7 @@ title: Datenbankerstellung mit SQL
       box-shadow: 0 18px 55px rgba(0,0,0,.18);
       margin: 0 auto 1.25rem;
       display: block;
+      line-height: 1.7;
     "
   >
 </p>
@@ -32,5 +33,15 @@ Das Buch kann hier direkt im Browser gelesen und heruntergeladen werden.
   ·
   <a href="{{ '/assets/pdf/db-sql.pdf'   |   relative_url }}" download>
     PDF herunterladen
+    line-height: 1.7;
   </a>
 </p>
+
+
+<embed
+  src="{{ '/assets/pdf/db-sql.pdf' | relative_url }}"
+  type="application/pdf"
+  width="100%"
+  height="950px"
+/>
+
