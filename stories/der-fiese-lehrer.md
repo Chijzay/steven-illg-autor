@@ -7,7 +7,7 @@ language: "de"
 rights: "© 2014 Steven Illg. Alle Rechte vorbehalten."
 ---
 
-[Zur Startseite](https://chijzay.github.io/short-stories-samples/) · [Zu den Geschichten](https://chijzay.github.io/short-stories-samples/stories/)
+[Zur Startseite](https://chijzay.github.io/steven-illg-autor/) · [Zu den Geschichten](https://chijzay.github.io/short-stories-samples/stories/)
 
 # **Der fiese Lehrer**
 
@@ -112,7 +112,7 @@ Während ich mit Herrn Lange telefoniere, bemerke ich nicht, dass hinter mir auf
 ---
 
 **Quelle:**  <br>
-Anthologie *„So vergeht die Zeit“ (2004–2014)*, Geschichte 1, © 2004.
+Anthologie *»So vergeht die Zeit« (2004–2014)*, Geschichte 1, © 2004.
 
 **Hinweis zur Nutzung:** <br> 
 Diese Leseprobe ist **nicht** zur Weiterverbreitung oder Bearbeitung freigegeben. 
