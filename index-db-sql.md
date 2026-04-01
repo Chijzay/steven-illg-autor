@@ -34,7 +34,6 @@ Das Buch kann hier direkt im Browser gelesen und heruntergeladen werden.
   <a href="{{ '/assets/pdf/db-sql.pdf'   |   relative_url }}" download>
     PDF herunterladen
   </a>
-    line-height: 1.7;
 </p>
 
 
