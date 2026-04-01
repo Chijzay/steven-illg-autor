@@ -27,9 +27,11 @@ title: Datenbankerstellung mit SQL
 
 <br>
 
-Das Buch kann hier direkt im Browser gelesen und heruntergeladen werden.
+--- 
 
 <br>
+
+Das Buch kann hier direkt im Browser gelesen und heruntergeladen werden.
 
 <p>
   <a href="{{ '/assets/pdf/db-sql.pdf' | relative_url }}" target="_blank" rel="noopener">
@@ -41,6 +43,10 @@ Das Buch kann hier direkt im Browser gelesen und heruntergeladen werden.
   </a>
 </p>
 
+
+<br>
+
+--- 
 
 <br>
 
