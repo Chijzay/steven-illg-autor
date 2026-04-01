@@ -8,7 +8,7 @@ In diesem Repository veröffentliche ich eine kleine Auswahl an Kurzgeschichten 
 
 ## Lesen
 
-- **Online (GitHub Pages):** [Zu den Kurzgeschichten](https://chijzay.github.io/short-stories-samples/)
+- **Online (GitHub Pages):** [[Zu den Kurzgeschichten](https://chijzay.github.io/short-stor](https://chijzay.github.io/steven-illg-autor/))
 - **Im Repository:** [`stories/`](./stories/)
 
 ## Kontext
