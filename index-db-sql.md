@@ -2,6 +2,8 @@
 title: Datenbankerstellung mit SQL
 ---
 
+[Zur Startseite](https://chijzay.github.io/steven-illg-autor/)
+
 # Datenbankerstellung mit SQL
 
 Hier kannst du die Leseprobe direkt im Browser lesen.
