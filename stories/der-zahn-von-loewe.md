@@ -7,7 +7,7 @@ language: "de"
 rights: "© 2014 Steven Illg. Alle Rechte vorbehalten."
 ---
 
-[Zur Startseite](https://chijzay.github.io/steven-illg-autor/) · [Zu den Geschichten](https://chijzay.github.io/short-stories-samples/stories/)
+[Zur Startseite](https://chijzay.github.io/steven-illg-autor/) · [Zu den Geschichten](https://chijzay.github.io/steven-illg-autor/stories/)
 
 # **Der Zahn von Löwe**
 
