@@ -7,7 +7,7 @@ language: "de"
 rights: "© 2014 Steven Illg. Alle Rechte vorbehalten."
 ---
 
-[Zur Startseite](https://chijzay.github.io/short-stories-samples/) · [Zu den Geschichten](https://chijzay.github.io/steven-illg-autor/stories/)
+[Zur Startseite](https://chijzay.github.io/steven-illg-autor/) · [Zu den Geschichten](https://chijzay.github.io/steven-illg-autor/stories/)
 
 # **Jeder wäre der Falsche**
 
