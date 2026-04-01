@@ -4,7 +4,7 @@ title: Autorenseite
 
 <p align="center">
   <img
-    src="{{ site.baseurl }}/assets/img/cover.jpg"
+    src="{{ site.baseurl }}/assets/img/autor.jpg"
     alt="Cover: So vergeht die Zeit"
     style="
       max-width: 300px;
