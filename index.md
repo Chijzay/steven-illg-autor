@@ -23,7 +23,7 @@ title: Autorenseite
 Ich bin Steven Illg und veröffentliche hier Veröffentlichungen, Kurzgeschichten und Einblicke in meine Arbeiten als Autor.
 
 ## **[Was in uns bleibt](.)**
-## **[Datenbankerstellung mit SQL](./dbe-sql-steven-illg/)**
+## **[Datenbankerstellung mit SQL](dbe-sql-steven-illg)**
 ## **[So vergeht die Zeit](./stories/)**
 
 ---
