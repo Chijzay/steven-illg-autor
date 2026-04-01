@@ -16,4 +16,4 @@ Hier kannst du die Leseprobe direkt im Browser lesen.
   </p>
 </object>
 
-[PDF in neuem Tab öffnen]({{ '/assets/pdf/dbe-sql-steven-illg.pdf' | relative_url }})
+[PDF in neuem Tab öffnen]({{ '/assets/pdf/db-sql-steven-illg.pdf' | relative_url }})
