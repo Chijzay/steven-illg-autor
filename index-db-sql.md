@@ -36,7 +36,7 @@ Das Buch kann hier direkt im Browser gelesen und heruntergeladen werden.
   <a href="{{ '/assets/pdf/db-sql.pdf' | relative_url }}" target="_blank" rel="noopener">
     PDF in neuem Tab öffnen
   </a>
-  |
+  ·
   <a href="{{ '/assets/pdf/db-sql.pdf'   |   relative_url }}" download>
     PDF herunterladen
   </a>
