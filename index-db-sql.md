@@ -6,16 +6,38 @@ title: Datenbankerstellung mit SQL
 
 # Datenbankerstellung mit SQL
 
+<p align="center">
+  <img
+    src="{{ site.baseurl }}/assets/img/cover-db.jpg"
+    alt="Cover: Datenbankerstellung mit SQL"
+    style="
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 18px 55px rgba(0,0,0,.18);
+      margin: 0 auto 1.25rem;
+      display: block;
+    "
+  >
+</p>
+
+
 Hier kannst du die Leseprobe direkt im Browser lesen.
 
-<object data="{{ '/assets/pdf/dbe-sql.pdf' | relative_url }}"
-        type="application/pdf"
-        width="100%"
-        height="950px">
-  <p>
-    Dein Browser zeigt die PDF hier nicht direkt an.
-    <a href="{{ '/assets/pdf/dbe-sql.pdf' | relative_url }}">PDF öffnen</a>
-  </p>
-</object>
+<embed
+  src="{{ '/assets/pdf/db-sql.pdf' | relative_url }}"
+  type="application/pdf"
+  width="100%"
+  height="950px"
+/>
 
-[PDF in neuem Tab öffnen]({{ '/assets/pdf/db-sql.pdf' | relative_url }})
+<p>
+  <a href="{{ '/assets/pdf/db-sql.pdf' | relative_url }}" target="_blank" rel="noopener">
+    PDF in neuem Tab öffnen
+  </a>
+  |
+  <a href="{{ '/assets/pdf/db-sql.pdf' | relative_url }}" download>
+    PDF herunterladen
+  </a>
+</p>
