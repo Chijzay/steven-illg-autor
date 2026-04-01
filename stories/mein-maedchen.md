@@ -1,13 +1,13 @@
 ---
 title: "Mein Mädchen"
 author: "Steven Illg"
-collection: '„So vergeht die Zeit“ – Kurzgeschichten Anthologie (2004–2014)'
+collection: 'So vergeht die Zeit – Kurzgeschichten Anthologie (2004–2014)'
 written: "Hamburg, 2008"
 language: "de"
 rights: "© 2014 Steven Illg. Alle Rechte vorbehalten."
 ---
 
-[Zur Startseite](https://chijzay.github.io/short-stories-samples/) · [Zu den Geschichten](https://chijzay.github.io/short-stories-samples/stories/)
+[Zur Startseite](https://chijzay.github.io/steven-illg-autor/) · [Zu den Geschichten](https://chijzay.github.io/steven-illg-autor/stories/)
 
 # **Mein Mädchen**
 
@@ -92,7 +92,7 @@ Die Zimmertür öffnete sich quietschend einen Spalt breit, durch den zwei Perso
 ---
 
 **Quelle:**  <br>
-Anthologie *„So vergeht die Zeit“ (2004–2014)*, Geschichte 11, © 2008. 
+Anthologie *So vergeht die Zeit (2004–2014)*, Geschichte 11, © 2008. 
 
 **Hinweis zur Nutzung:** <br> 
 Diese Leseprobe ist **nicht** zur Weiterverbreitung oder Bearbeitung freigegeben. 
