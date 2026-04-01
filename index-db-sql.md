@@ -1,8 +1,8 @@
 ---
-title: Datenbanerstellung mit SQL
+title: Datenbankerstellung mit SQL
 ---
 
-# Datenbanerstellung mit SQL
+# Datenbankerstellung mit SQL
 
 Hier kannst du die Leseprobe direkt im Browser lesen.
 
