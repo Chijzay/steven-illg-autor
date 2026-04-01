@@ -18,13 +18,16 @@ title: Datenbankerstellung mit SQL
       box-shadow: 0 18px 55px rgba(0,0,0,.18);
       margin: 0 auto 1.25rem;
       display: block;
-      line-height: 1.7;
     "
   >
 </p>
 
 
+<br>
+
 Das Buch kann hier direkt im Browser gelesen und heruntergeladen werden.
+
+<br>
 
 <p>
   <a href="{{ '/assets/pdf/db-sql.pdf' | relative_url }}" target="_blank" rel="noopener">
@@ -36,6 +39,8 @@ Das Buch kann hier direkt im Browser gelesen und heruntergeladen werden.
   </a>
 </p>
 
+
+<br>
 
 <embed
   src="{{ '/assets/pdf/db-sql.pdf' | relative_url }}"
