@@ -1,13 +1,13 @@
 ---
 title: "Jeder wäre der Falsche"
 author: "Steven Illg"
-collection: '„So vergeht die Zeit“ – Kurzgeschichten Anthologie (2004–2014)'
+collection: 'So vergeht die Zeit – Kurzgeschichten Anthologie (2004–2014)'
 written: "Hamburg, 2011"
 language: "de"
 rights: "© 2014 Steven Illg. Alle Rechte vorbehalten."
 ---
 
-[Zur Startseite](https://chijzay.github.io/short-stories-samples/) · [Zu den Geschichten](https://chijzay.github.io/short-stories-samples/stories/)
+[Zur Startseite](https://chijzay.github.io/short-stories-samples/) · [Zu den Geschichten](https://chijzay.github.io/steven-illg-autor/stories/)
 
 # **Jeder wäre der Falsche**
 
@@ -74,7 +74,7 @@ _... warum ich? ... warum wir?«_
 ---
 
 **Quelle:**  <br>
-Anthologie *„So vergeht die Zeit“ (2004–2014)*, Geschichte 16, © 2011. 
+Anthologie *So vergeht die Zeit (2004–2014)*, Geschichte 16, © 2011. 
 
 **Hinweis zur Nutzung:** <br> 
 Diese Leseprobe ist **nicht** zur Weiterverbreitung oder Bearbeitung freigegeben. 
