@@ -12,8 +12,6 @@ Der Zahn von Löwe: 2014
 
 [Zur Startseite](https://chijzay.github.io/steven-illg-autor/)
 
---- 
-
 # Kurzgeschichten
 
 --- 
@@ -35,6 +33,8 @@ Der Zahn von Löwe: 2014
     "
   >
 </p>
+
+<br>
 
 --- 
 
