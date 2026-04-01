@@ -1,13 +1,13 @@
 ---
 title: "Der Ring"
 author: "Steven Illg"
-collection: '„So vergeht die Zeit“ – Kurzgeschichten Anthologie (2004–2014)'
+collection: 'So vergeht die Zeit – Kurzgeschichten Anthologie (2004–2014)'
 written: "Hamburg, ca. 2006 - 2007"
 language: "de"
 rights: "© 2014 Steven Illg. Alle Rechte vorbehalten."
 ---
 
-[Zur Startseite](https://chijzay.github.io/steven-illg-autor/) · [Zu den Geschichten](https://chijzay.github.io/short-stories-samples/stories/)
+[Zur Startseite](https://chijzay.github.io/steven-illg-autor/) · [Zu den Geschichten](https://chijzay.github.io/steven-illg-autor/stories/)
 
 # **Der Ring**
 
