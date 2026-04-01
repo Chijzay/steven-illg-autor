@@ -23,7 +23,7 @@ title: Datenbankerstellung mit SQL
 </p>
 
 
-Hier kannst du die Leseprobe direkt im Browser lesen.
+Das Buch kann hier direkt im Browser gelesen und heruntergeladen werden.
 
 <embed
   src="{{ '/assets/pdf/db-sql.pdf' | relative_url }}"
