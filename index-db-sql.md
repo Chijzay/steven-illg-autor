@@ -25,13 +25,6 @@ title: Datenbankerstellung mit SQL
 
 Das Buch kann hier direkt im Browser gelesen und heruntergeladen werden.
 
-<embed
-  src="{{ '/assets/pdf/db-sql.pdf' | relative_url }}"
-  type="application/pdf"
-  width="100%"
-  height="950px"
-/>
-
 <p>
   <a href="{{ '/assets/pdf/db-sql.pdf' | relative_url }}" target="_blank" rel="noopener">
     PDF in neuem Tab öffnen
