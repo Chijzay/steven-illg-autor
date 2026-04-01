@@ -1,8 +1,4 @@
-# Ausgewählte Kurzgeschichten aus meiner Anthologie
-
-<p align="center">
-  <img src="assets/img/cover.jpg" alt="Cover: So vergeht die Zeit" width="300">
-</p>
+# Ausgewählte Kurzgeschichten aus meiner Anthologie und vieles mehr
 
 In diesem Repository veröffentliche ich eine kleine Auswahl an Kurzgeschichten als Schreibproben aus meiner Anthologie _„So vergeht die Zeit“ (2004–2014)_. Damit ergänze ich mein GitHub-Portfolio neben meinen technisch orientierten Projekten um Creative Writing.
 
