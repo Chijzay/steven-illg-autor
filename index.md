@@ -17,7 +17,7 @@ title: Autorenseite
     "
   >
   <figcaption style="font-size: 0.95rem; color: #666; font-style: italic;">
-    Autorenfoto 2025
+       Autorenfoto © 2025 Steven Illg
   </figcaption>
 </figure>
 
