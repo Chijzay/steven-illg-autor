@@ -1,5 +1,5 @@
 ---
-title: Leseproben
+title: Kurzgeschichten
 Vorwort: 2014
 Der fiese Lehrer: 2004
 Der Schatten am Fenster: 2006
@@ -10,9 +10,13 @@ Jeder wäre der Falsche: 2011
 Der Zahn von Löwe: 2014
 ---
 
-[Zur Startseite](https://chijzay.github.io/short-stories-samples/)
+[Zur Startseite](https://chijzay.github.io/steven-illg-autor/)
 
 # Kurzgeschichten
+
+<p align="center">
+  <img src="assets/img/cover.jpg" alt="Cover: So vergeht die Zeit" width="300">
+</p>
 
 <br>
 
@@ -27,6 +31,4 @@ Der Zahn von Löwe: 2014
 - [Mein Mädchen](./mein-maedchen.md/)
 - [Jeder wäre der Falsche](./jeder-waere-der-falsche.md/)
 - [Der Zahn von Löwe](./der-zahn-von-loewe.md/)
-
-
 
