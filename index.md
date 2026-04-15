@@ -30,7 +30,9 @@ title: Autorenseite
 
 # Willkommen! 
 
-Ich bin Steven Illg. Hier erhalten Sie einen Überblick über meine Veröffentlichungen, Kurzgeschichten und meine Arbeit als Autor.
+Ich bin Steven Illg. 
+
+Auf dieser Seite erhältst Du einen Überblick über meine Veröffentlichungen, Kurzgeschichten und meine Arbeit als Autor.
 
 ---
 
