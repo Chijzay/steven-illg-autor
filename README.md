@@ -18,7 +18,7 @@ Die Texte sind Auszüge aus meiner Anthologie:
 Einzelne Texte können sensible Themen berühren (z.B. psychische Belastung, Selbstverletzung oder Ähnliches).  
 Bitte lies achtsam und pausiere, wenn es dir nicht guttut.
 
-## Projektstruktur
+## Projektstruktur (erster Stand)
 
 ```
 .
