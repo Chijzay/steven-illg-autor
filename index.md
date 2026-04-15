@@ -40,6 +40,10 @@ Auf dieser Seite erhältst Du einen Überblick über meine Veröffentlichungen, 
 
 ---
 
+## **[Bachelorthesis](ba-thesis.md)**
+
+---
+
 ## **[Datenbankerstellung mit SQL](index-db-sql.md)**
 
 ---
