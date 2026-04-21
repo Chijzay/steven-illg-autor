@@ -1,6 +1,7 @@
-## Wissenschaftliche Arbeit
 
 [Zur Startseite](https://chijzay.github.io/steven-illg-autor/)
+
+## Wissenschaftliche Arbeit
 
 ### *Konzeption und prototypische Entwicklung eines Systems für elektronisch unterstützte Verhandlungsprozesse*
 
