@@ -12,5 +12,5 @@ Bachelorarbeit, HAW Hamburg, Studiengang Wirtschaftsinformatik, 22. September 20
 Eine wissenschaftliche Arbeit über hybride elektronische Verhandlungssysteme im B2B-E-Procurement. Untersucht wurden Konzeption, prototypische Umsetzung und Bewertung eines webbasierten Systems, das Verhandlungs- und Auktionsmechanismen miteinander verbindet.
 
 *Der Volltext ist derzeit nicht öffentlich verfügbar, kann bei berechtigtem Interesse jedoch auf Anfrage bereitgestellt werden. <br>
-Kontakt: steven.illg.it@outlook.com*
+Kontakt: steven.illg.it(at)outlook.com*
 
