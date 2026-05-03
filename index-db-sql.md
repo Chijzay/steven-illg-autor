@@ -41,6 +41,7 @@ Das Buch kann hier direkt im Browser gelesen und heruntergeladen werden.
   </a>
 
   <br>
+  <br>
 
   <a href="{{ '/assets/pdf/db-sql.pdf'   |   relative_url }}" download>
     PDF herunterladen
