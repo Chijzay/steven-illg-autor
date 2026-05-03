@@ -8,4 +8,4 @@ title: Was in uns bleibt
 
 --- 
 
-## Voraussichtlich ab Mai / Juni 2026
+## Voraussichtlich ab Mai / Juni 2026 bei Amazon und überall wo es Bücher gibt erhältlich.
