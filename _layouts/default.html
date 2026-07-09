@@ -1,40 +1,255 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Steven Illg — Autor und IT-Experte.">
+  <title>{% if page.title %}{{ page.title }} · Steven Illg{% else %}Steven Illg{% endif %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    <title>
-      {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
-    </title>
+    :root {
+      --bg: #fafaf8;
+      --surface: #ffffff;
+      --surface-hover: #f5f4f0;
+      --border: #e5e3dc;
+      --border-hover: #ccc9bf;
+      --text: #1a1a18;
+      --text-2: #5a5a54;
+      --text-3: #9a9990;
+      --radius: 12px;
+      --radius-sm: 8px;
+    }
 
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    {% seo %}
-  </head>
+    html { scroll-behavior: smooth; }
 
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">{{ site.header_title | default: "Autorenseite" }}</h1>
-      <h2 class="project-tagline">{{ site.description | default: "© Steven Illg, 2004-2025. Alle Rechte vorbehalten." }}</h2>
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    a { color: inherit; }
+
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ── HEADER ── */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .site-header .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+    .site-logo {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 17px;
+      font-weight: 500;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .site-logo span { color: var(--text-3); font-weight: 400; }
+    .header-link {
+      font-size: 13px;
+      color: var(--text-3);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .header-link:hover { color: var(--text-2); }
+
+    /* ── BREADCRUMB ── */
+    .breadcrumb {
+      padding: 1.25rem 0 0;
+    }
+    .breadcrumb a {
+      font-size: 13px;
+      color: var(--text-3);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: color 0.15s;
+    }
+    .breadcrumb a:hover { color: var(--text-2); }
+
+    /* ── CONTENT ── */
+    .page-content {
+      padding: 1.75rem 0 3rem;
+    }
+
+    .page-content h1 {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 1.9rem;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+    .page-content h2 {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin: 2rem 0 0.6rem;
+      color: var(--text);
+    }
+    .page-content h3 {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 1.1rem;
+      font-weight: 500;
+      font-style: italic;
+      margin: 1.5rem 0 0.5rem;
+      color: var(--text-2);
+    }
+    .page-content p {
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+    .page-content em { font-style: italic; }
+    .page-content strong { font-weight: 500; }
+    .page-content a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+    .page-content a:hover { color: var(--text-2); }
+    .page-content hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 1.75rem 0;
+    }
+    .page-content ul, .page-content ol {
+      padding-left: 1.4rem;
+      margin-bottom: 1rem;
+    }
+    .page-content li { margin-bottom: 0.3rem; }
+    .page-content blockquote {
+      border-left: 3px solid var(--border-hover);
+      padding-left: 1rem;
+      color: var(--text-2);
+      font-style: italic;
+      margin: 1.25rem 0;
+    }
+
+    /* Story text */
+    .page-content .story {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .page-content .story p { margin-bottom: 1.15rem; }
+    .page-content .story blockquote {
+      font-style: italic;
+      color: var(--text-2);
+      border-left: 2px solid var(--border-hover);
+      padding-left: 1rem;
+      margin: 1.25rem 0;
+    }
+
+    /* Cover images */
+    .page-content img {
+      max-width: 100%;
+      border-radius: var(--radius);
+      display: block;
+      margin: 1.5rem auto;
+    }
+    .page-content p[align="center"] img,
+    .page-content figure img {
+      max-width: 260px;
+    }
+
+    /* PDF embed */
+    .page-content embed {
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+    }
+
+    /* ── FOOTER ── */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 0;
+    }
+    .site-footer .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .site-footer p { font-size: 12px; color: var(--text-3); }
+    .footer-links { display: flex; gap: 1.25rem; }
+    .footer-links a {
+      font-size: 12px;
+      color: var(--text-3);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .footer-links a:hover { color: var(--text-2); }
+
+    @media (max-width: 520px) {
+      .page-content h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="{{ site.baseurl }}/" class="site-logo">Steven Illg <span>· Portfolio</span></a>
+    <a href="https://github.com/Chijzay" class="header-link" target="_blank" rel="noopener">
+      <i class="ti ti-brand-github"></i> GitHub
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <nav class="breadcrumb">
+      {% if page.collection_back %}
+        <a href="{{ site.baseurl }}{{ page.collection_back }}"><i class="ti ti-arrow-left"></i> Zurück</a>
+      {% else %}
+        <a href="{{ site.baseurl }}/"><i class="ti ti-arrow-left"></i> Portfolio</a>
       {% endif %}
-    </section>
-
-    <main class="main-content">
+    </nav>
+    <div class="page-content">
       {{ content }}
-    </main>
+    </div>
+  </div>
+</main>
 
-    <footer class="site-footer">
-      {% if site.github.is_project_page %}
-        <span class="site-footer-owner">
-          <a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by
-          <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.
-        </span>
-      {% endif %}
-      <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
-    </footer>
-  </body>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2004–2026 Steven Illg · Alle Rechte vorbehalten</p>
+    <div class="footer-links">
+      <a href="{{ site.baseurl }}/LICENSE" target="_blank" rel="noopener">
+        <i class="ti ti-file-description"></i> Lizenz
+      </a>
+      <a href="https://github.com/Chijzay/steven-illg-autor" target="_blank" rel="noopener">
+        <i class="ti ti-brand-github"></i> Repository
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
 </html>
-

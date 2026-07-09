@@ -2,3 +2,14 @@ title: "Steven Illg · Portfolio"
 description: "Autor und IT-Experte — Kurzgeschichten, Romane und technische Projekte."
 markdown: kramdown
 permalink: pretty
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: "stories"
+    values:
+      layout: "default"
+      collection_back: "/stories/"
