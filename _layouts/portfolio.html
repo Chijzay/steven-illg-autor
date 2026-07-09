@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Steven Illg — Autor und IT-Experte. Kurzgeschichten, Romane und technische Projekte.">
+  <title>Steven Illg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #fafaf8;
+      --surface: #ffffff;
+      --surface-hover: #f5f4f0;
+      --border: #e5e3dc;
+      --border-hover: #ccc9bf;
+      --text: #1a1a18;
+      --text-2: #5a5a54;
+      --text-3: #9a9990;
+      --accent: #3b5a8a;
+      --accent-bg: #eef2f8;
+      --accent-text: #2a4168;
+      --lit: #4a6741;
+      --lit-bg: #eef4ec;
+      --lit-text: #2d4328;
+      --amber: #7a5a18;
+      --amber-bg: #faf3e0;
+      --amber-text: #5a3f0e;
+      --radius: 12px;
+      --radius-sm: 8px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ── HEADER ── */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .site-header .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+    .site-logo {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 17px;
+      font-weight: 500;
+      color: var(--text);
+    }
+    .site-logo span {
+      color: var(--text-3);
+      font-weight: 400;
+    }
+    .header-link {
+      font-size: 13px;
+      color: var(--text-3);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: color 0.15s;
+    }
+    .header-link:hover { color: var(--text-2); }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 3rem 0 2.5rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    .hero-photo {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--surface);
+      box-shadow: 0 0 0 1px var(--border);
+      flex-shrink: 0;
+    }
+    .hero-photo-placeholder {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--text-3);
+      font-size: 36px;
+    }
+    .hero-body h1 {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 0.35rem;
+      letter-spacing: -0.01em;
+    }
+    .hero-roles {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 0.75rem;
+    }
+    .role-pill {
+      font-size: 12px;
+      font-weight: 500;
+      padding: 3px 10px;
+      border-radius: 99px;
+      border: 1px solid var(--border);
+      color: var(--text-2);
+      background: var(--surface);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .hero-bio {
+      font-size: 15px;
+      color: var(--text-2);
+      max-width: 480px;
+      line-height: 1.65;
+    }
+
+    /* ── TABS ── */
+    .tabs-nav {
+      display: flex;
+      border-bottom: 1px solid var(--border);
+      gap: 0;
+      margin-bottom: 2rem;
+    }
+    .tab-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 11px 20px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-3);
+      border: none;
+      background: none;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .tab-btn:hover { color: var(--text-2); }
+    .tab-btn.active {
+      color: var(--text);
+      border-bottom-color: var(--text);
+    }
+    .tab-pane { display: none; }
+    .tab-pane.active { display: block; }
+
+    /* ── SECTION LABEL ── */
+    .label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      margin-bottom: 0.85rem;
+    }
+
+    /* ── CARDS ── */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin-bottom: 2.25rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.2rem 1.3rem 1.1rem;
+      display: block;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .card:hover {
+      border-color: var(--border-hover);
+      background: var(--surface-hover);
+    }
+    .card-icon {
+      font-size: 22px;
+      color: var(--text-3);
+      margin-bottom: 10px;
+      display: block;
+    }
+    .card h3 {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+    .card p {
+      font-size: 13px;
+      color: var(--text-2);
+      line-height: 1.55;
+      margin-bottom: 10px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 3px 9px;
+      border-radius: 99px;
+    }
+    .badge-lit   { background: var(--lit-bg);   color: var(--lit-text); }
+    .badge-tech  { background: var(--accent-bg); color: var(--accent-text); }
+    .badge-amber { background: var(--amber-bg);  color: var(--amber-text); }
+
+    /* ── STORY LIST ── */
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 2rem;
+    }
+    .story-item {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 10px 13px;
+      font-size: 13px;
+      color: var(--text);
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .story-item:hover {
+      border-color: var(--border-hover);
+      background: var(--surface-hover);
+    }
+    .story-item i {
+      font-size: 15px;
+      color: var(--text-3);
+      flex-shrink: 0;
+    }
+
+    /* ── FOOTER ── */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      margin-top: 3rem;
+      padding: 1.5rem 0;
+    }
+    .site-footer .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .site-footer p {
+      font-size: 12px;
+      color: var(--text-3);
+    }
+    .footer-links {
+      display: flex;
+      gap: 1.25rem;
+    }
+    .footer-links a {
+      font-size: 12px;
+      color: var(--text-3);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: color 0.15s;
+    }
+    .footer-links a:hover { color: var(--text-2); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 520px) {
+      .hero { flex-direction: column; gap: 1.25rem; text-align: center; }
+      .hero-roles { justify-content: center; }
+      .story-grid { grid-template-columns: 1fr; }
+      .hero-body h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <span class="site-logo">Steven Illg <span>· Portfolio</span></span>
+    <a href="https://github.com/Chijzay" class="header-link" target="_blank" rel="noopener">
+      <i class="ti ti-brand-github"></i> GitHub
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="hero">
+      {% assign photo = site.baseurl | append: '/assets/img/autor.jpg' %}
+      <img src="{{ photo }}" alt="Foto von Steven Illg" class="hero-photo"
+           onerror="this.style.display='none'; document.getElementById('photo-placeholder').style.display='flex';">
+      <div class="hero-photo-placeholder" id="photo-placeholder" style="display:none;">
+        <i class="ti ti-user"></i>
+      </div>
+      <div class="hero-body">
+        <h1>Steven Illg</h1>
+        <div class="hero-roles">
+          <span class="role-pill"><i class="ti ti-feather"></i> Autor</span>
+          <span class="role-pill"><i class="ti ti-code"></i> IT-Experte</span>
+        </div>
+        <p class="hero-bio">Kurzgeschichten, Romane und technische Projekte — auf dieser Seite findest du einen Überblick über meine Arbeit.</p>
+      </div>
+    </section>
+
+    <nav class="tabs-nav" role="tablist">
+      <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="pane-autor" onclick="switchTab('autor', this)">
+        <i class="ti ti-feather"></i> Autor
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false" aria-controls="pane-it" onclick="switchTab('it', this)">
+        <i class="ti ti-code"></i> IT
+      </button>
+    </nav>
+
+    <div id="pane-autor" class="tab-pane active" role="tabpanel">
+      <p class="label">Veröffentlichungen</p>
+      <div class="cards">
+        <a href="{{ site.baseurl }}/stories/" class="card">
+          <i class="ti ti-books card-icon"></i>
+          <h3>So vergeht die Zeit</h3>
+          <p>Anthologie mit Kurzgeschichten aus den Jahren 2004–2014</p>
+          <span class="badge badge-lit"><i class="ti ti-bookmark"></i> Anthologie</span>
+        </a>
+        <a href="{{ site.baseurl }}/index-wiub/" class="card">
+          <i class="ti ti-book card-icon"></i>
+          <h3>Was in uns bleibt</h3>
+          <p>Über Erinnerung, Verlust und das, was Menschen miteinander verbindet</p>
+          <span class="badge badge-lit"><i class="ti ti-bookmark"></i> Roman</span>
+        </a>
+      </div>
+
+      <p class="label">Kurzgeschichten (Auswahl)</p>
+      <div class="story-grid">
+        <a href="{{ site.baseurl }}/stories/mein-meadchen/" class="story-item">
+          <i class="ti ti-file-text"></i> Mein Mädchen
+        </a>
+        <a href="{{ site.baseurl }}/stories/der-fiese-lehrer/" class="story-item">
+          <i class="ti ti-file-text"></i> Der fiese Lehrer
+        </a>
+        <a href="{{ site.baseurl }}/stories/der-ring/" class="story-item">
+          <i class="ti ti-file-text"></i> Der Ring
+        </a>
+        <a href="{{ site.baseurl }}/stories/es-passierte-im-bus/" class="story-item">
+          <i class="ti ti-file-text"></i> Es passierte im Bus
+        </a>
+        <a href="{{ site.baseurl }}/stories/der-schatten-am-fenster/" class="story-item">
+          <i class="ti ti-file-text"></i> Der Schatten am Fenster
+        </a>
+        <a href="{{ site.baseurl }}/stories/jeder-waere-der-falsche/" class="story-item">
+          <i class="ti ti-file-text"></i> Jeder wäre der Falsche
+        </a>
+        <a href="{{ site.baseurl }}/stories/der-zahn-von-loewe/" class="story-item">
+          <i class="ti ti-file-text"></i> Der Zahn vom Löwe
+        </a>
+        <a href="{{ site.baseurl }}/stories/" class="story-item" style="color: var(--text-3); font-style: italic;">
+          <i class="ti ti-dots"></i> Alle Geschichten →
+        </a>
+      </div>
+    </div>
+
+    <div id="pane-it" class="tab-pane" role="tabpanel">
+      <p class="label">Projekte & Arbeiten</p>
+      <div class="cards">
+        <a href="{{ site.baseurl }}/ba-thesis/" class="card">
+          <i class="ti ti-school card-icon"></i>
+          <h3>Bachelorthesis</h3>
+          <p>Wissenschaftliche Abschlussarbeit aus dem IT-Bereich</p>
+          <span class="badge badge-tech"><i class="ti ti-certificate"></i> Akademisch</span>
+        </a>
+        <a href="{{ site.baseurl }}/index-db-sql/" class="card">
+          <i class="ti ti-database card-icon"></i>
+          <h3>Datenbankerstellung mit SQL</h3>
+          <p>Praktischer Leitfaden zur Datenbankmodellierung und SQL-Abfragen</p>
+          <span class="badge badge-amber"><i class="ti ti-book-2"></i> Leitfaden</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2004–2026 Steven Illg · Alle Rechte vorbehalten</p>
+    <div class="footer-links">
+      <a href="{{ site.baseurl }}/LICENSE" target="_blank" rel="noopener">
+        <i class="ti ti-file-description"></i> Lizenz
+      </a>
+      <a href="https://github.com/Chijzay/steven-illg-autor" target="_blank" rel="noopener">
+        <i class="ti ti-brand-github"></i> Repository
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+function switchTab(id, btn) {
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    b.classList.remove('active');
+    b.setAttribute('aria-selected', 'false');
+  });
+  document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  btn.setAttribute('aria-selected', 'true');
+  document.getElementById('pane-' + id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
