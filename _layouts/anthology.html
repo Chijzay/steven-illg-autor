@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>So vergeht die Zeit · Steven Illg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #fafaf8; --surface: #ffffff; --surface-hover: #f5f4f0;
+      --border: #e5e3dc; --border-hover: #ccc9bf;
+      --text: #1a1a18; --text-2: #5a5a54; --text-3: #9a9990;
+      --radius: 12px; --radius-sm: 8px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text); font-size: 16px; line-height: 1.7; min-height: 100vh; }
+    a { color: inherit; text-decoration: none; }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 1.5rem; }
+
+    .site-header { border-bottom: 1px solid var(--border); background: var(--surface); position: sticky; top: 0; z-index: 10; }
+    .site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .site-logo { font-family: 'Lora', Georgia, serif; font-size: 17px; font-weight: 500; color: var(--text); }
+    .site-logo span { color: var(--text-3); font-weight: 400; }
+    .header-link { font-size: 13px; color: var(--text-3); display: flex; align-items: center; gap: 5px; transition: color 0.15s; }
+    .header-link:hover { color: var(--text-2); }
+
+    .breadcrumb { padding: 1.25rem 0 0; }
+    .breadcrumb a { font-size: 13px; color: var(--text-3); display: inline-flex; align-items: center; gap: 5px; transition: color 0.15s; }
+    .breadcrumb a:hover { color: var(--text-2); }
+
+    .page-content { padding: 1.75rem 0 3rem; }
+
+    .book-hero { display: flex; gap: 2rem; align-items: flex-start; margin-bottom: 2rem; }
+    .book-cover { width: 150px; flex-shrink: 0; border-radius: var(--radius); border: 1px solid var(--border); }
+    .book-meta h1 { font-family: 'Lora', Georgia, serif; font-size: 1.75rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.35rem; }
+    .book-meta .subtitle { font-size: 14px; color: var(--text-3); margin-bottom: 0.85rem; }
+    .book-meta p { font-size: 15px; color: var(--text-2); line-height: 1.65; }
+
+    hr { border: none; border-top: 1px solid var(--border); margin: 1.75rem 0; }
+
+    .label { font-size: 11px; font-weight: 500; letter-spacing: 0.09em; text-transform: uppercase; color: var(--text-3); margin-bottom: 0.85rem; }
+
+    .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 1.75rem; }
+    .story-item { display: flex; align-items: center; gap: 9px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 10px 13px; font-size: 13px; color: var(--text); transition: border-color 0.15s, background 0.15s; }
+    .story-item:hover { border-color: var(--border-hover); background: var(--surface-hover); }
+    .story-item i { font-size: 15px; color: var(--text-3); flex-shrink: 0; }
+
+    .vorwort-item { display: flex; align-items: center; gap: 9px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 10px 13px; font-size: 13px; color: var(--text); transition: border-color 0.15s, background 0.15s; margin-bottom: 1.75rem; }
+    .vorwort-item:hover { border-color: var(--border-hover); background: var(--surface-hover); }
+    .vorwort-item i { font-size: 15px; color: var(--text-3); flex-shrink: 0; }
+
+    .site-footer { border-top: 1px solid var(--border); padding: 1.5rem 0; }
+    .site-footer .wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
+    .site-footer p { font-size: 12px; color: var(--text-3); }
+    .footer-links { display: flex; gap: 1.25rem; }
+    .footer-links a { font-size: 12px; color: var(--text-3); display: flex; align-items: center; gap: 4px; transition: color 0.15s; }
+    .footer-links a:hover { color: var(--text-2); }
+
+    @media (max-width: 520px) {
+      .book-hero { flex-direction: column; }
+      .book-cover { width: 120px; }
+      .story-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="{{ site.baseurl }}/" class="site-logo">Steven Illg <span>· Portfolio</span></a>
+    <a href="https://github.com/Chijzay" class="header-link" target="_blank" rel="noopener">
+      <i class="ti ti-brand-github"></i> GitHub
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <nav class="breadcrumb">
+      <a href="{{ site.baseurl }}/"><i class="ti ti-arrow-left"></i> Portfolio</a>
+    </nav>
+    <div class="page-content">
+
+      <div class="book-hero">
+        <img src="{{ site.baseurl }}/assets/img/cover.jpg" alt="Cover: So vergeht die Zeit" class="book-cover">
+        <div class="book-meta">
+          <h1>So vergeht die Zeit</h1>
+          <p class="subtitle">Kurzgeschichten-Anthologie · 2004–2014</p>
+          <p>Eine Sammlung von Kurzgeschichten aus einem Jahrzehnt — von der ersten Geschichte 2004 bis zur Fertigstellung der Anthologie 2014. Jede Geschichte entstand zu einem anderen Zeitpunkt und trägt eine eigene Stimmung in sich.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <p class="label">Vorwort</p>
+      <a href="{{ site.baseurl }}/stories/vorwort/" class="vorwort-item">
+        <i class="ti ti-book-2"></i> Vorwort lesen
+      </a>
+
+      <p class="label">Kurzgeschichten</p>
+      <div class="story-grid">
+        <a href="{{ site.baseurl }}/stories/der-fiese-lehrer/" class="story-item">
+          <i class="ti ti-file-text"></i> Der fiese Lehrer
+        </a>
+        <a href="{{ site.baseurl }}/stories/der-schatten-am-fenster/" class="story-item">
+          <i class="ti ti-file-text"></i> Der Schatten am Fenster
+        </a>
+        <a href="{{ site.baseurl }}/stories/der-ring/" class="story-item">
+          <i class="ti ti-file-text"></i> Der Ring
+        </a>
+        <a href="{{ site.baseurl }}/stories/es-passierte-im-bus/" class="story-item">
+          <i class="ti ti-file-text"></i> Es passierte im Bus
+        </a>
+        <a href="{{ site.baseurl }}/stories/mein-maedchen/" class="story-item">
+          <i class="ti ti-file-text"></i> Mein Mädchen
+        </a>
+        <a href="{{ site.baseurl }}/stories/jeder-waere-der-falsche/" class="story-item">
+          <i class="ti ti-file-text"></i> Jeder wäre der Falsche
+        </a>
+        <a href="{{ site.baseurl }}/stories/der-zahn-von-loewe/" class="story-item">
+          <i class="ti ti-file-text"></i> Der Zahn von Löwe
+        </a>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2004–2026 Steven Illg · Alle Rechte vorbehalten</p>
+    <div class="footer-links">
+      <a href="{{ site.baseurl }}/LICENSE" target="_blank" rel="noopener"><i class="ti ti-file-description"></i> Lizenz</a>
+      <a href="https://github.com/Chijzay/steven-illg-autor" target="_blank" rel="noopener"><i class="ti ti-brand-github"></i> Repository</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
