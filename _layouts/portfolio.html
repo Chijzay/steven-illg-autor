@@ -98,8 +98,11 @@
       width: 240px;
       height: 240px;
       border-radius: 50%;
-      object-fit: cover;
-      object-position: 50% 32%;
+      background-image: var(--photo-url);
+      background-size: contain;
+      background-position: center 18%;
+      background-repeat: no-repeat;
+      background-color: #b07248;
       border: 4px solid var(--surface);
       box-shadow: 0 0 0 1px var(--border);
       flex-shrink: 0;
@@ -359,9 +362,10 @@
 
     <section class="hero">
       {% assign photo = site.baseurl | append: '/assets/img/autor.jpg' %}
-      <img src="{{ photo }}" alt="Foto von Steven Illg" class="hero-photo"
+      <div class="hero-photo"
+           style="--photo-url: url('{{ photo }}')"
            onclick="document.getElementById('photo-overlay').classList.add('open')"
-           onerror="this.style.display='none'; document.getElementById('photo-placeholder').style.display='flex';">
+           role="img" aria-label="Foto von Steven Illg"></div>
       <div class="hero-photo-placeholder" id="photo-placeholder" style="display:none;">
         <i class="ti ti-user"></i>
       </div>
