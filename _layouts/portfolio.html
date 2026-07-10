@@ -99,7 +99,7 @@
       height: 190px;
       border-radius: 50%;
       object-fit: cover;
-      object-position: 50% top;
+      object-position: 50% 18%;
       border: 4px solid var(--surface);
       box-shadow: 0 0 0 1px var(--border);
       flex-shrink: 0;
@@ -152,21 +152,28 @@
     }
     .hero-roles {
       display: flex;
-      gap: 8px;
+      gap: 10px;
       flex-wrap: wrap;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.85rem;
     }
     .role-pill {
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 500;
-      padding: 3px 10px;
+      padding: 6px 16px;
       border-radius: 99px;
-      border: 1px solid var(--border);
-      color: var(--text-2);
-      background: var(--surface);
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: 7px;
+    }
+    .role-pill-autor {
+      background: #eef4ec;
+      color: #2d4328;
+      border: 1px solid #aad49a;
+    }
+    .role-pill-it {
+      background: #eef2f8;
+      color: #1e3a68;
+      border: 1px solid #9ab8e8;
     }
     .hero-bio {
       font-size: 15px;
@@ -361,8 +368,8 @@
       <div class="hero-body">
         <h1>Steven Illg</h1>
         <div class="hero-roles">
-          <span class="role-pill"><i class="ti ti-feather"></i> Autor</span>
-          <span class="role-pill"><i class="ti ti-code"></i> IT-Experte</span>
+          <span class="role-pill role-pill-autor"><i class="ti ti-feather"></i> Autor</span>
+          <span class="role-pill role-pill-it"><i class="ti ti-code"></i> IT-Experte</span>
         </div>
         <p class="hero-bio">Hamburger Autor und IT-Spezialist. Seit 2004 schreibe ich Kurzgeschichten und Romane — meine Anthologie <em>So vergeht die Zeit</em> versammelt Geschichten aus einem Jahrzehnt. Im Sommer 2026 erscheint mein erster Roman <em>Was in uns bleibt</em>. Beruflich bewege ich mich in der Wirtschaftsinformatik mit Schwerpunkt auf Softwareentwicklung und digitale Systeme.</p>
       </div>

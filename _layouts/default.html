@@ -209,6 +209,25 @@
     @media (max-width: 520px) {
       .page-content h1 { font-size: 1.5rem; }
     }
+
+    .img-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.8);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    .img-overlay.open { display: flex; }
+    .img-overlay img {
+      max-width: min(90vw, 640px);
+      max-height: 90vh;
+      border-radius: 12px;
+      object-fit: contain;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.5);
+    }
   </style>
 </head>
 <body>
@@ -250,6 +269,26 @@
     </div>
   </div>
 </footer>
+
+<div class="img-overlay" id="img-overlay" onclick="this.classList.remove('open')">
+  <img id="img-overlay-src" src="" alt="">
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.page-content img').forEach(function(img) {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', function() {
+      document.getElementById('img-overlay-src').src = this.src;
+      document.getElementById('img-overlay-src').alt = this.alt;
+      document.getElementById('img-overlay').classList.add('open');
+    });
+  });
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') document.getElementById('img-overlay').classList.remove('open');
+});
+</script>
 
 </body>
 </html>

@@ -35,7 +35,11 @@
     .page-content { padding: 1.75rem 0 3rem; }
 
     .book-hero { display: flex; gap: 2rem; align-items: flex-start; margin-bottom: 2rem; }
-    .book-cover { width: 150px; flex-shrink: 0; border-radius: var(--radius); border: 1px solid var(--border); }
+    .book-cover { width: 150px; flex-shrink: 0; border-radius: var(--radius); border: 1px solid var(--border); cursor: zoom-in; transition: box-shadow 0.15s; }
+    .book-cover:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+    .img-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 100; align-items: center; justify-content: center; cursor: zoom-out; }
+    .img-overlay.open { display: flex; }
+    .img-overlay img { max-width: min(90vw, 480px); max-height: 90vh; border-radius: 12px; object-fit: contain; box-shadow: 0 24px 64px rgba(0,0,0,0.5); }
     .book-meta h1 { font-family: 'Lora', Georgia, serif; font-size: 1.75rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.35rem; }
     .book-meta .subtitle { font-size: 14px; color: var(--text-3); margin-bottom: 0.85rem; }
     .book-meta p { font-size: 15px; color: var(--text-2); line-height: 1.65; }
@@ -86,7 +90,8 @@
     <div class="page-content">
 
       <div class="book-hero">
-        <img src="{{ site.baseurl }}/assets/img/cover.jpg" alt="Cover: So vergeht die Zeit" class="book-cover">
+        <img src="{{ site.baseurl }}/assets/img/cover.jpg" alt="Cover: So vergeht die Zeit" class="book-cover"
+             onclick="document.getElementById('img-overlay').classList.add('open')">
         <div class="book-meta">
           <h1>So vergeht die Zeit</h1>
           <p class="subtitle">Kurzgeschichten-Anthologie · 2004–2014</p>
@@ -139,6 +144,15 @@
     </div>
   </div>
 </footer>
+
+<div class="img-overlay" id="img-overlay" onclick="this.classList.remove('open')">
+  <img src="{{ site.baseurl }}/assets/img/cover.jpg" alt="Cover: So vergeht die Zeit">
+</div>
+<script>
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') document.getElementById('img-overlay').classList.remove('open');
+});
+</script>
 
 </body>
 </html>
