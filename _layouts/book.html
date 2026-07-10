@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} · Steven Illg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #fafaf8; --surface: #ffffff; --surface-hover: #f5f4f0;
+      --border: #e5e3dc; --border-hover: #ccc9bf;
+      --text: #1a1a18; --text-2: #5a5a54; --text-3: #9a9990;
+      --radius: 12px; --radius-sm: 8px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text); font-size: 16px; line-height: 1.7; min-height: 100vh; }
+    a { color: inherit; text-decoration: none; }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 1.5rem; }
+
+    .site-header { border-bottom: 1px solid var(--border); background: var(--surface); position: sticky; top: 0; z-index: 10; }
+    .site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .site-logo { font-family: 'Lora', Georgia, serif; font-size: 17px; font-weight: 500; color: var(--text); }
+    .site-logo span { color: var(--text-3); font-weight: 400; }
+    .header-link { font-size: 13px; color: var(--text-3); display: flex; align-items: center; gap: 5px; transition: color 0.15s; }
+    .header-link:hover { color: var(--text-2); }
+
+    .breadcrumb { padding: 1.25rem 0 0; }
+    .breadcrumb a { font-size: 13px; color: var(--text-3); display: inline-flex; align-items: center; gap: 5px; transition: color 0.15s; }
+    .breadcrumb a:hover { color: var(--text-2); }
+
+    .page-content { padding: 1.75rem 0 3rem; }
+
+    /* Book hero */
+    .book-hero { display: flex; gap: 2rem; align-items: flex-start; margin-bottom: 2rem; }
+    .book-cover-wrap { flex-shrink: 0; }
+    .book-cover {
+      width: 150px;
+      height: auto;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      cursor: zoom-in;
+      transition: box-shadow 0.15s;
+      display: block;
+    }
+    .book-cover:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
+    .book-meta h1 { font-family: 'Lora', Georgia, serif; font-size: 1.75rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.35rem; }
+    .book-meta .subtitle { font-size: 14px; color: var(--text-3); margin-bottom: 0.85rem; }
+    .book-meta p { font-size: 15px; color: var(--text-2); line-height: 1.65; }
+
+    hr { border: none; border-top: 1px solid var(--border); margin: 1.75rem 0; }
+
+    .label { font-size: 11px; font-weight: 500; letter-spacing: 0.09em; text-transform: uppercase; color: var(--text-3); margin-bottom: 0.85rem; }
+
+    /* Card grid (stories + actions) */
+    .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 1.75rem; }
+    .card-grid-full { display: grid; grid-template-columns: 1fr; gap: 8px; margin-bottom: 1.75rem; }
+    .card-item { display: flex; align-items: center; gap: 9px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 10px 13px; font-size: 13px; color: var(--text); transition: border-color 0.15s, background 0.15s; }
+    .card-item:hover { border-color: var(--border-hover); background: var(--surface-hover); }
+    .card-item i { font-size: 15px; color: var(--text-3); flex-shrink: 0; }
+    .card-item .card-label { font-weight: 500; }
+    .card-item .card-sub { font-size: 12px; color: var(--text-3); margin-left: auto; }
+
+    /* PDF embed */
+    .pdf-embed-wrap { margin-top: 1.5rem; }
+    .pdf-embed-wrap iframe {
+      width: 100%;
+      height: 80vh;
+      min-height: 500px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+    }
+    .pdf-mobile-note {
+      display: none;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 1rem 1.25rem;
+      font-size: 14px;
+      color: var(--text-2);
+      text-align: center;
+    }
+
+    /* Coming soon */
+    .coming-soon {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      text-align: center;
+      color: var(--text-3);
+      font-size: 15px;
+    }
+    .coming-soon i { font-size: 32px; display: block; margin-bottom: 0.75rem; }
+
+    /* Lightbox */
+    .img-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 100; align-items: center; justify-content: center; cursor: zoom-out; }
+    .img-overlay.open { display: flex; }
+    .img-overlay img { max-width: min(90vw, 480px); max-height: 90vh; border-radius: 12px; object-fit: contain; box-shadow: 0 24px 64px rgba(0,0,0,0.5); }
+
+    .site-footer { border-top: 1px solid var(--border); padding: 1.5rem 0; }
+    .site-footer .wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
+    .site-footer p { font-size: 12px; color: var(--text-3); }
+    .footer-links { display: flex; gap: 1.25rem; }
+    .footer-links a { font-size: 12px; color: var(--text-3); display: flex; align-items: center; gap: 4px; transition: color 0.15s; }
+    .footer-links a:hover { color: var(--text-2); }
+
+    @media (max-width: 520px) {
+      .book-hero { flex-direction: column; gap: 1.25rem; }
+      .book-cover { width: 130px; }
+      .card-grid { grid-template-columns: 1fr; }
+      .pdf-embed-wrap iframe { display: none; }
+      .pdf-mobile-note { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="{{ site.baseurl }}/" class="site-logo">Steven Illg <span>· Portfolio</span></a>
+    <a href="https://github.com/Chijzay" class="header-link" target="_blank" rel="noopener">
+      <i class="ti ti-brand-github"></i> GitHub
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <nav class="breadcrumb">
+      <a href="{{ site.baseurl }}/"><i class="ti ti-arrow-left"></i> Portfolio</a>
+    </nav>
+    <div class="page-content">
+
+      <div class="book-hero">
+        {% if page.cover %}
+        <div class="book-cover-wrap">
+          <img src="{{ site.baseurl }}{{ page.cover }}" alt="Cover: {{ page.title }}" class="book-cover"
+               id="book-cover-img"
+               onclick="document.getElementById('img-overlay').classList.add('open')">
+        </div>
+        {% endif %}
+        <div class="book-meta">
+          <h1>{{ page.title }}</h1>
+          {% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
+          {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+        </div>
+      </div>
+
+      <hr>
+
+      {% if page.book_type == "anthology" %}
+
+        <p class="label">Vorwort</p>
+        <div class="card-grid-full" style="margin-bottom: 1.75rem;">
+          <a href="{{ site.baseurl }}/stories/vorwort/" class="card-item">
+            <i class="ti ti-book-2"></i>
+            <span class="card-label">Vorwort lesen</span>
+          </a>
+        </div>
+
+        <p class="label">Kurzgeschichten</p>
+        <div class="card-grid">
+          <a href="{{ site.baseurl }}/stories/der-fiese-lehrer/" class="card-item">
+            <i class="ti ti-file-text"></i> Der fiese Lehrer
+          </a>
+          <a href="{{ site.baseurl }}/stories/der-schatten-am-fenster/" class="card-item">
+            <i class="ti ti-file-text"></i> Der Schatten am Fenster
+          </a>
+          <a href="{{ site.baseurl }}/stories/der-ring/" class="card-item">
+            <i class="ti ti-file-text"></i> Der Ring
+          </a>
+          <a href="{{ site.baseurl }}/stories/es-passierte-im-bus/" class="card-item">
+            <i class="ti ti-file-text"></i> Es passierte im Bus
+          </a>
+          <a href="{{ site.baseurl }}/stories/mein-maedchen/" class="card-item">
+            <i class="ti ti-file-text"></i> Mein Mädchen
+          </a>
+          <a href="{{ site.baseurl }}/stories/jeder-waere-der-falsche/" class="card-item">
+            <i class="ti ti-file-text"></i> Jeder wäre der Falsche
+          </a>
+          <a href="{{ site.baseurl }}/stories/der-zahn-von-loewe/" class="card-item">
+            <i class="ti ti-file-text"></i> Der Zahn von Löwe
+          </a>
+        </div>
+
+      {% elsif page.book_type == "sql" %}
+
+        <p class="label">PDF lesen & herunterladen</p>
+        <div class="card-grid">
+          <a href="{{ '/assets/pdf/db-sql.pdf' | relative_url }}" target="_blank" rel="noopener" class="card-item">
+            <i class="ti ti-eye"></i>
+            <span class="card-label">PDF öffnen</span>
+            <span class="card-sub">neuer Tab</span>
+          </a>
+          <a href="{{ '/assets/pdf/db-sql.pdf' | relative_url }}" download class="card-item">
+            <i class="ti ti-download"></i>
+            <span class="card-label">PDF herunterladen</span>
+          </a>
+        </div>
+
+        <div class="pdf-embed-wrap">
+          <iframe src="{{ '/assets/pdf/db-sql.pdf' | relative_url }}" title="Datenbankerstellung mit SQL"></iframe>
+          <div class="pdf-mobile-note">
+            <i class="ti ti-device-mobile"></i>
+            Auf dem Handy bitte das PDF direkt öffnen oder herunterladen.
+          </div>
+        </div>
+
+      {% elsif page.book_type == "novel" %}
+
+        <div class="coming-soon">
+          <i class="ti ti-clock"></i>
+          Erscheint voraussichtlich im Sommer 2026 — bei Amazon und überall wo es Bücher gibt.
+        </div>
+
+      {% endif %}
+
+      {{ content }}
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2004–2026 Steven Illg · Alle Rechte vorbehalten</p>
+    <div class="footer-links">
+      <a href="{{ site.baseurl }}/LICENSE" target="_blank" rel="noopener"><i class="ti ti-file-description"></i> Lizenz</a>
+      <a href="https://github.com/Chijzay/steven-illg-autor" target="_blank" rel="noopener"><i class="ti ti-brand-github"></i> Repository</a>
+    </div>
+  </div>
+</footer>
+
+<div class="img-overlay" id="img-overlay" onclick="this.classList.remove('open')">
+  <img src="{% if page.cover %}{{ site.baseurl }}{{ page.cover }}{% endif %}" alt="Cover: {{ page.title }}">
+</div>
+<script>
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') document.getElementById('img-overlay').classList.remove('open');
+});
+</script>
+
+</body>
+</html>
