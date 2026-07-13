@@ -1,60 +1,91 @@
-# Ausgewählte Kurzgeschichten aus meiner Anthologie und vieles mehr
+# Steven Illg · Portfolio
 
-In diesem Repository veröffentliche ich eine kleine Auswahl an Kurzgeschichten als Schreibproben aus meiner Anthologie _„So vergeht die Zeit“ (2004–2014)_. Damit ergänze ich mein GitHub-Portfolio neben meinen technisch orientierten Projekten um Creative Writing.
+Persönliches Portfolio als Jekyll-Website, veröffentlicht via GitHub Pages unter **[chijzay.github.io/steven-illg-autor](https://chijzay.github.io/steven-illg-autor/)**.
 
-## Lesen
+Das Portfolio vereint zwei Bereiche: literarische Werke als **Autor** und technische Projekte als **IT-Experte**.
 
-- **Online (GitHub Pages):** [[Zu den Kurzgeschichten](https://chijzay.github.io/steven-illg-autor/stories/)]
-- **Im Repository:** [`stories/`](./stories/)
+---
 
-## Kontext
+## Inhalt
 
-Die Texte sind Auszüge aus meiner Anthologie:
+### Autor
 
-- _Steven Illg – „So vergeht die Zeit“, Kurzgeschichten Anthologie (verfasst von 2004–2014)_
+- **_So vergeht die Zeit_** – Kurzgeschichten-Anthologie (2004–2014)  
+  Eine Sammlung von sieben Kurzgeschichten aus einem Jahrzehnt, online lesbar mit Vorwort.
+- **_Was in uns bleibt_** – Roman (erscheint Sommer 2026)
 
-## Hinweis zu Inhalten
+### IT
 
-Einzelne Texte können sensible Themen berühren (z.B. psychische Belastung, Selbstverletzung oder Ähnliches).  
-Bitte lies achtsam und pausiere, wenn es dir nicht guttut.
+- **Datenbankerstellung mit SQL** – Leitfaden zur Datenbankmodellierung und SQL-Abfragen, als PDF lesbar und herunterladbar.
 
-## Projektstruktur (erster Stand)
+---
+
+## Website lokal ausführen
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+Erfordert Ruby und Jekyll. Die Seite läuft dann unter `http://localhost:4000/steven-illg-autor/`.
+
+---
+
+## Projektstruktur
 
 ```
 .
-├─ _layouts/                   # Statische Dateien für die Website
-│  └─ default.html             # Standard-Layout, bindet CSS ein
+├─ _layouts/
+│  ├─ portfolio.html     # Startseite mit Tab-Navigation (Autor / IT)
+│  ├─ book.html          # Universelles Layout für alle Buchseiten
+│  └─ default.html       # Layout für Einzelgeschichten und sonstige Unterseiten
 │
-├─ assets/                     # Statische Dateien für die Website
-│  ├─ css/
-│  │   └─ style.scss           # Custom-Styles: Layout, Typografie, Farben
-│  └─ img/
-│     └─ cover.jpg             # Buchcover der Printfassung
+├─ assets/
+│  ├─ img/
+│  │  ├─ autor.jpg       # Profilfoto
+│  │  ├─ cover.jpg       # Buchcover „So vergeht die Zeit"
+│  │  └─ cover-db.jpg    # Cover „Datenbankerstellung mit SQL"
+│  └─ pdf/
+│     └─ db-sql.pdf      # SQL-Leitfaden als PDF
 │
-├─ stories/                    # Kurzgeschichten (Single Source of Truth)
-│  ├─ der-fiese-lehrer.md      
-│  ├─ der-ring.md      
+├─ stories/
+│  ├─ index.md                    # Anthologie-Übersicht
+│  ├─ vorwort.md
+│  ├─ der-fiese-lehrer.md
+│  ├─ der-ring.md
 │  ├─ der-schatten-am-fenster.md
 │  ├─ der-zahn-von-loewe.md
 │  ├─ es-passierte-im-bus.md
-│  ├─ index.md                 # Übersicht der Leseproben
 │  ├─ jeder-waere-der-falsche.md
-│  ├─ mein-meadchen.md
-│  └─ vorwort.md
+│  └─ mein-maedchen.md
 │
-├─ CITATION.cff                # Zitierhinweise für das Repository 
-├─ LICENSE                     # © Steven Illg – keine Weiterverwendung ohne Erlaubnis
-├─ README.md                   # Projektübersicht, Links, Kontext, Rechte
-├─ _config.yml                 # Jekyll und GitHub Pages Konfiguration
-└─ index.md                    # Startseite der GitHub-Pages-Website
+├─ index.md              # Startseite (verweist auf portfolio-Layout)
+├─ index-wiub.md         # Seite: „Was in uns bleibt"
+├─ index-db-sql.md       # Seite: „Datenbankerstellung mit SQL"
+├─ ba-thesis.md          # Weitere IT-Projektseite
+├─ _config.yml           # Jekyll-Konfiguration
+├─ CITATION.cff          # Zitierhinweise
+├─ LICENSE               # © Steven Illg – alle Rechte vorbehalten
+└─ README.md
 ```
 
-## Kontakt 
+---
 
-Wenn du mich kontaktieren möchtest, nutze bitte am besten den Kontaktweg über mein GitHub-Profil.
+## Hinweis zu Inhalten
+
+Einzelne Kurzgeschichten können sensible Themen berühren (u. a. psychische Belastung).  
+Bitte lies achtsam und pausiere, wenn es dir nicht guttut.
+
+---
+
+## Kontakt
+
+Kontaktmöglichkeiten findest du auf meinem [GitHub-Profil](https://github.com/Chijzay).
+
+---
 
 ## Lizenz und Rechte
 
-© Steven Illg, 2004-2025 — **alle Rechte vorbehalten**.
+© Steven Illg, 2004–2026 — **alle Rechte vorbehalten**.
 
-Es wird **keine** Lizenz zur Vervielfältigung, Verbreitung, Bearbeitung oder sonstigen Weiterverwendung der Texte eingeräumt. Details siehe [`LICENSE`](./LICENSE).
+Es wird **keine** Lizenz zur Vervielfältigung, Verbreitung, Bearbeitung oder sonstigen Weiterverwendung der Texte und Inhalte eingeräumt. Details siehe [`LICENSE`](./LICENSE).
