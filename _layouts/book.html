@@ -65,13 +65,21 @@
     .card-item .card-sub { font-size: 12px; color: var(--text-3); margin-left: auto; }
 
     /* PDF embed */
-    .pdf-embed-wrap { margin-top: 1.5rem; }
+    .pdf-embed-wrap {
+      margin-top: 2rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
     .pdf-embed-wrap iframe {
       width: 100%;
-      height: 80vh;
-      min-height: 500px;
-      border: 1px solid var(--border);
+      height: 82vh;
+      min-height: 560px;
+      border: none;
       border-radius: var(--radius-sm);
+      display: block;
     }
     .pdf-mobile-note {
       display: none;
