@@ -14,7 +14,7 @@ Das Portfolio vereint zwei Bereiche: literarische Werke als **Autor** und techni
 
   Kurzgeschichten-Anthologie (2004–2014).
 
-  Eine Sammlung von sieben Kurzgeschichten aus einem Jahrzehnt, ausgewählte Geschichten sind online lesbar mit Vorwort.
+  Eine Sammlung von 21 Kurzgeschichten aus einem Jahrzehnt. Das Vorwort und ausgewählte Geschichten sind online lesbar.
 
 - **_Was in uns bleibt_**
 
