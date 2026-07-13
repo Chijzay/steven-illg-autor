@@ -11,14 +11,17 @@ Das Portfolio vereint zwei Bereiche: literarische Werke als **Autor** und techni
 ### Autor
 
 - **_So vergeht die Zeit_**
+
   Kurzgeschichten-Anthologie (2004–2014). Eine Sammlung von sieben Kurzgeschichten aus einem Jahrzehnt, online lesbar mit Vorwort.
 
 - **_Was in uns bleibt_**
+
   Zwei Kurzromane (erscheint voraussichtlich im Spätsommer 2026).
 
 ### IT
 
 - **Datenbankerstellung mit SQL**
+
   Ein Leitfaden zur Datenbankmodellierung und SQL-Abfragen, als PDF lesbar und herunterladbar.
 
 ---
