@@ -1,6 +1,6 @@
 # Steven Illg · Portfolio
 
-Persönliches Portfolio als Jekyll-Website, veröffentlicht via GitHub Pages unter **[chijzay.github.io/steven-illg-autor](https://chijzay.github.io/steven-illg-autor/)**.
+Persönliches Portfolio als Jekyll-Website, veröffentlicht via GitHub Pages.
 
 Das Portfolio vereint zwei Bereiche: literarische Werke als **Autor** und technische Projekte als **IT-Experte**.
 
@@ -22,9 +22,7 @@ Das Portfolio vereint zwei Bereiche: literarische Werke als **Autor** und techni
 
 ## Website besuchen
 
----
-https://chijzay.github.io/steven-illg-autor/
----
+Beuschbar unter **[chijzay.github.io/steven-illg-autor](https://chijzay.github.io/steven-illg-autor/)**.
 
 ## Projektstruktur
 
