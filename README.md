@@ -12,7 +12,9 @@ Das Portfolio vereint zwei Bereiche: literarische Werke als **Autor** und techni
 
 - **_So vergeht die Zeit_**
 
-  Kurzgeschichten-Anthologie (2004–2014). Eine Sammlung von sieben Kurzgeschichten aus einem Jahrzehnt, online lesbar mit Vorwort.
+  Kurzgeschichten-Anthologie (2004–2014).
+
+  Eine Sammlung von sieben Kurzgeschichten aus einem Jahrzehnt, ausgewählte Geschichten sind online lesbar mit Vorwort.
 
 - **_Was in uns bleibt_**
 
