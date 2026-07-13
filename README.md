@@ -32,6 +32,8 @@ Das Portfolio vereint zwei Bereiche: literarische Werke als **Autor** und techni
 
 Besuchbar unter **[chijzay.github.io/steven-illg-autor](https://chijzay.github.io/steven-illg-autor/)**.
 
+---
+
 ## Projektstruktur
 
 ```
