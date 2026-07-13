@@ -20,15 +20,10 @@ Das Portfolio vereint zwei Bereiche: literarische Werke als **Autor** und techni
 
 ---
 
-## Website lokal ausführen
+## Website besuchen
 
-```bash
-bundle install
-bundle exec jekyll serve
-```
-
-Erfordert Ruby und Jekyll. Die Seite läuft dann unter `http://localhost:4000/steven-illg-autor/`.
-
+---
+https://chijzay.github.io/steven-illg-autor/
 ---
 
 ## Projektstruktur
