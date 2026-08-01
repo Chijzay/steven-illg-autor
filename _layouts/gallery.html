@@ -195,14 +195,8 @@
 function openLightbox(url) {
   var img = document.getElementById('lightbox-img');
   img.style.backgroundImage = "url('" + url + "')";
-  var isPortrait = url.indexOf('IMG_1848') !== -1 || url.indexOf('IMG_1890') !== -1;
-  if (isPortrait) {
-    img.style.width = 'min(55vw, 600px)';
-    img.style.height = '90vh';
-  } else {
-    img.style.width = 'min(92vw, 1100px)';
-    img.style.height = 'min(80vh, 700px)';
-  }
+  img.style.width = 'min(92vw, 1200px)';
+  img.style.height = '88vh';
   document.getElementById('lightbox').classList.add('open');
 }
 function closeLightbox() {
