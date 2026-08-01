@@ -175,6 +175,11 @@
       color: #1e3a68;
       border: 1px solid #9ab8e8;
     }
+    .role-pill-foto {
+      background: #f3f0f8;
+      color: #3d2068;
+      border: 1px solid #c0a8e8;
+    }
     .hero-bio {
       font-size: 15px;
       color: var(--text-2);
@@ -370,6 +375,7 @@
         <div class="hero-roles">
           <span class="role-pill role-pill-autor"><i class="ti ti-feather"></i> Autor</span>
           <span class="role-pill role-pill-it"><i class="ti ti-code"></i> IT-Experte</span>
+          <span class="role-pill role-pill-foto"><i class="ti ti-camera"></i> Fotograf</span>
         </div>
         <p class="hero-bio">Hamburger Autor und IT-Spezialist. Seit 2004 schreibe ich Kurzgeschichten und Romane — meine Anthologie <em>So vergeht die Zeit</em> versammelt Geschichten aus einem Jahrzehnt. Im Sommer 2026 erscheint mein erster Roman <em>Was in uns bleibt</em>. Beruflich bewege ich mich in der Wirtschaftsinformatik mit Schwerpunkt auf Softwareentwicklung und digitale Systeme.</p>
       </div>
@@ -381,6 +387,9 @@
       </button>
       <button class="tab-btn" role="tab" aria-selected="false" aria-controls="pane-it" onclick="switchTab('it', this)">
         <i class="ti ti-code"></i> IT
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false" aria-controls="pane-foto" onclick="switchTab('foto', this)">
+        <i class="ti ti-camera"></i> Fotografie
       </button>
     </nav>
 
@@ -417,6 +426,18 @@
           <h3>Datenbankerstellung mit SQL</h3>
           <p>Praktischer Leitfaden zur Datenbankmodellierung und SQL-Abfragen</p>
           <span class="badge badge-amber"><i class="ti ti-book-2"></i> Leitfaden</span>
+        </a>
+      </div>
+    </div>
+
+    <div id="pane-foto" class="tab-pane" role="tabpanel">
+      <p class="label">Galerie</p>
+      <div class="cards">
+        <a href="{{ site.baseurl }}/fotografie/" class="card">
+          <i class="ti ti-camera card-icon"></i>
+          <h3>Fotografie</h3>
+          <p>Natur, Tiere und Hamburg — aufgenommen mit der Kamera</p>
+          <span class="badge badge-lit"><i class="ti ti-photo"></i> Galerie</span>
         </a>
       </div>
     </div>
