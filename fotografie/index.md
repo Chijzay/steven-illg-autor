@@ -1,6 +1,6 @@
 ---
 layout: gallery
 title: Fotografie
-description: Natur, Tiere und Hamburg — aufgenommen mit der Kamera.
+description: Natur, Tiere und Hamburg.
 permalink: /fotografie/
 ---
