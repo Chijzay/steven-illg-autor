@@ -27,7 +27,7 @@ Für das grammatikalische Thema der _»Satzlehre«_ erhielt ich in der sechsten 
 
 Der ernstzunehmende Wunsch ein Buch zu schreiben manifestierte sich jedoch nach der Fertigstellung meiner ersten und eher zufällig entstandenen Kurzgeschichte im Jahr 2004 – und heute, zehn Jahre später, kann ich dank moderner Technik, PDF-Dateien, Internet und digitaler Drucktechnologie mein eigenes Vorwort, in meinem eigenen Buch, mit meinen eigenen Kurzgeschichten lesen.
 
-Jedoch war der Weg zu einem fertigen Buch keineswegs einfach und sehr häufig müheselig – doch dafür entdeckte ich neben der vergessen geglaubten Freude am Schreiben viele neue und interessante Zusammenhänge.
+Der Weg zum fertigen Buch war jedoch keineswegs einfach und sehr häufig müheselig – doch dafür entdeckte ich neben der vergessen geglaubten Freude am Schreiben viele neue und interessante Zusammenhänge.
 
 Abgesehen als Autor, bin ich auch als Korrektor, Lektor, Redakteur, Layout- und Covergestalter, Fotograf und letzten Endes in der Werbung tätig gewesen.
 
