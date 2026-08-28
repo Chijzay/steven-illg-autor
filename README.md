@@ -26,6 +26,11 @@ Das Portfolio vereint zwei Bereiche: literarische Werke als **Autor** und techni
 
   Ein Leitfaden zur Datenbankmodellierung und SQL-Abfragen, als PDF lesbar und herunterladbar.
 
+### Fotografie
+
+- **Galerie**
+
+
 ---
 
 ## Website besuchen
@@ -33,12 +38,6 @@ Das Portfolio vereint zwei Bereiche: literarische Werke als **Autor** und techni
 Besuchbar unter **[chijzay.github.io/steven-illg-autor](https://chijzay.github.io/steven-illg-autor/)**.
 
 ---
-
-### Fotografie
-
-- **Galerie**
-
-
 
 ## Projektstruktur
 
