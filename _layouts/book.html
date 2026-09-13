@@ -198,21 +198,27 @@
 
       {% elsif page.book_type == "sql" %}
 
-        <p class="label">PDF lesen & herunterladen</p>
+        {% if page.pdf_path %}
+          {% assign pdf_url = page.pdf_path | prepend: site.baseurl %}
+        {% else %}
+          {% assign pdf_url = '/assets/pdf/db-sql.pdf' | relative_url %}
+        {% endif %}
+
+        <p class="label">PDF lesen &amp; herunterladen</p>
         <div class="card-grid">
-          <a href="{{ '/assets/pdf/db-sql.pdf' | relative_url }}" target="_blank" rel="noopener" class="card-item">
+          <a href="{{ pdf_url }}" target="_blank" rel="noopener" class="card-item">
             <i class="ti ti-eye"></i>
             <span class="card-label">PDF öffnen</span>
             <span class="card-sub">neuer Tab</span>
           </a>
-          <a href="{{ '/assets/pdf/db-sql.pdf' | relative_url }}" download class="card-item">
+          <a href="{{ pdf_url }}" download class="card-item">
             <i class="ti ti-download"></i>
             <span class="card-label">PDF herunterladen</span>
           </a>
         </div>
 
         <div class="pdf-embed-wrap">
-          <iframe src="{{ '/assets/pdf/db-sql.pdf' | relative_url }}" title="Datenbankerstellung mit SQL"></iframe>
+          <iframe src="{{ pdf_url }}" title="{{ page.title }}"></iframe>
           <div class="pdf-mobile-note">
             <i class="ti ti-device-mobile"></i>
             Auf dem Handy bitte das PDF direkt öffnen oder herunterladen.
