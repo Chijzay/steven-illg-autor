@@ -2,7 +2,7 @@
 
 Persönliches Portfolio als Jekyll-Website, veröffentlicht via GitHub Pages.
 
-Das Portfolio vereint zwei Bereiche: literarische Werke als **Autor** und technische Projekte als **IT-Experte**.
+Das Portfolio vereint drei Bereiche: literarische Werke als **Autor**, technische Projekte als **IT-Experte** und Aufnahmen als **Fotograf**.
 
 ---
 
